@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./public/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Mini Twitter</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <link rel="stylesheet" href="./public/assets/css/media.css" />
+
+    <!-- Font Awesome v4.7  -->
+    <link rel="stylesheet" href="./public/assets/css/font-awesome.min.css" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./public/assets/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="width: 100px">
+          <img src="./public/assets/img/logo.png" alt="" class="w-100" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="bg">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-12 col-lg-6 mb-4">
+            <div class="card create_tweet_form">
+              <div class="card-header">
+                <h4>Tweet Tweet</h4>
+              </div>
+              <div class="card-body">
+                <form class="tweet_input_form">
+                  <textarea
+                    class="form-control"
+                    type="text"
+                    placeholder="Type tour Today's Tweet"
+                    id="tweet_input"
+                  ></textarea>
+                  <small class="words"
+                    ><span id="characters">0</span> /
+                    <span id="characters_max">250</span></small
+                  >
+                  <p class="text-center mt-3">
+                    <input
+                      type="submit"
+                      value="Post Tweet"
+                      class="btn btn-sm btn-info"
+                      id="tweet_submit_btn"
+                    />
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <form class="tweet_search_form">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search Your Favourite Tweet"
+                    id="tweet_search"
+                  />
+                </form>
+              </div>
+              <div class="card-body">
+                <ul id="tweet_list_parent">
+                  <li class="item">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between">
+                        <p
+                          class="d-flex"
+                          style="align-items: center; padding: 0 1rem 0 0"
+                        >
+                          1
+                        </p>
+                        <div class="text_parent">
+                          <button
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#editTweetModal"
+                            class="editButton"
+                            title="Click to Edit Tweet"
+                          >
+                            The 45-minute film depicts how the beloved 'Khoka'
+                            of his parents became 'Mujib Bhai' to the oppressed
+                            people of Bengal, his life struggles, and his
+                            victory over the Pakistani oppressors.
+                          </button>
+                          <p class="time">
+                            Created on 1st August, 2022 at 11:23am
+                          </p>
+                        </div>
+                      </div>
+                      <p>
+                        <button type="button" class="btn deleteBtn">
+                          <i
+                            class="fa fa-times deleteButton"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between">
+                        <p
+                          class="d-flex"
+                          style="align-items: center; padding: 0 1rem 0 0"
+                        >
+                          2
+                        </p>
+                        <div class="text_parent">
+                          <button
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#editTweetModal"
+                            class="editButton"
+                            title="Click to Edit Tweet"
+                          >
+                            Can solar power systems operate in extreme heat? We
+                            visited one of Thailand’s biggest solar farms, where
+                            it tops 50°C in summer! Learn how it helps cut
+                            costs, create jobs, and generate a stable, green
+                            energy supply!
+                          </button>
+                          <p class="time">
+                            Created on 23rd September, 2020 at 4:53pm
+                          </p>
+                        </div>
+                      </div>
+                      <p>
+                        <button type="button" class="btn deleteBtn">
+                          <i
+                            class="fa fa-times deleteButton"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between">
+                        <p
+                          class="d-flex"
+                          style="align-items: center; padding: 0 1rem 0 0"
+                        >
+                          3
+                        </p>
+                        <div class="text_parent">
+                          <button
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#editTweetModal"
+                            class="editButton"
+                            title="Click to Edit Tweet"
+                          >
+                            Can solar power systems operate in extreme heat? We
+                            visited one of Thailand’s biggest solar farms, where
+                            it tops 50°C in summer! Learn how it helps cut
+                            costs, create jobs, and generate a stable, green
+                            energy supply!
+                          </button>
+                          <p class="time">
+                            Created on 1st July, 2023 at 8:23pm
+                          </p>
+                        </div>
+                      </div>
+                      <p>
+                        <button type="button" class="btn deleteBtn">
+                          <i
+                            class="fa fa-times deleteButton"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="editTweetModal"
+      tabindex="-1"
+      aria-labelledby="editTweetModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Tweet Tweet Edit</h5>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="editable_tweet_id" />
+            <textarea class="form-control" type="text" id="newTweet">
+The 45-minute film depicts how the beloved 'Khoka' of his parents became 'Mujib Bhai' to the oppressed people of Bengal, his life struggles, and his victory over the Pakistani oppressors.</textarea
+            >
+            <div class="d-flex justify-content-between">
+              <p>
+                Posted:
+                <span id="tweet_posted_time">1st August, 2022 at 11:23am</span>
+              </p>
+              <p class="text-end">
+                <span id="newCharacters">187</span> /
+                <span id="newCharacters_max">250</span>
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer" id="new_tweet_submit_btn">
+            <button
+              type="button"
+              class="btn btn-sm btn-dark"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              id="updateButton"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

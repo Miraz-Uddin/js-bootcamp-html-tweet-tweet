@@ -1,0 +1,100 @@
+ul li {
+	list-style: none;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bg {
+	background: url(../img/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 60rem;
+	position: relative;
+}
+
+.tweet_input_form {
+	position: relative;
+}
+
+.words {
+	position: absolute;
+	content: '';
+	top: -25px;
+	right: 5px;
+}
+
+.time {
+	font-size: 11px;
+	color: darkblue;
+}
+
+.item {
+	border-bottom: 1px solid rgb(245, 225, 245);
+	padding: 1rem 0 .6rem 0;
+}
+
+#tweet_input {
+	border: 2px solid #2c2c2c;
+	height: 16rem;
+	resize: none;
+	width: 100%;
+}
+
+#newTweet {
+	border: 2px solid #2c2c2c;
+	height: 16rem;
+	resize: none;
+}
+
+.form-control:focus {
+	box-shadow: none !important;
+}
+
+.editButton {
+	color:#00741f;
+	height: 20px;
+	line-height: 18px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+	margin-bottom: 4px;
+	font-size: 14px;
+	width: 100%;
+	background: transparent;
+	border: none;
+	padding: 0;
+	text-align: start;
+}
+
+.text_parent {
+	width: 28rem;
+}
+
+.deleteBtn {
+	color: #A52A2A;
+	padding: 0;
+}
+
+.create_tweet_form{
+	padding: 1rem 5rem;
+}
+
+.create_tweet_form .card-header {
+	padding: .5rem 1rem;
+	margin-bottom: 30px;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.create_tweet_form .card-body {
+	padding: 0;
+}
+
